@@ -1,18 +1,18 @@
+import { createI18n } from 'vue-i18n'
+import type { App } from 'vue'
 import en from './lang/en'
 import ja from './lang/ja'
 import zh from './lang/zh'
-import { createI18n } from 'vue-i18n'
-import type {App} from 'vue'
 
 const messages = {
-	en: en,
-	ja: ja,
-  zh: zh
+  en,
+  ja,
+  zh,
 }
 
 const i18n = createI18n({
   locale: 'zh',
-  messages
+  messages,
 })
 
 export function useI18n() {
